@@ -1,4 +1,4 @@
-package br.com.projetoUsuario.apiUsuario.config.swagger;
+package br.com.projeto.usuario.api.config.swagger;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;

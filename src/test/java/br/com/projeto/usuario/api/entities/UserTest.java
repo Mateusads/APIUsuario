@@ -1,4 +1,4 @@
-package br.com.projetoUsuario.apiUsuario.entities;
+package br.com.projeto.usuario.api.entities;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
