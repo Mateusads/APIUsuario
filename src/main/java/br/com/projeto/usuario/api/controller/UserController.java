@@ -1,5 +1,6 @@
 package br.com.projeto.usuario.api.controller;
 
+import br.com.projeto.usuario.api.controller.dto.UserRequestDTO;
 import br.com.projeto.usuario.api.entities.User;
 import br.com.projeto.usuario.api.services.UserService;
 import lombok.AllArgsConstructor;
@@ -25,7 +26,7 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public User createUser(@RequestBody User user){
+    public User createUser(@RequestBody UserRequestDTO userRequestDTO){
         var entity = userService.createUser(user);
         return entity;
     }
