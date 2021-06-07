@@ -13,7 +13,7 @@
   
   Deve-se clonar o projeto em sua maquina, abrir em uma IDE de preferência (foi desenvolvido no IntelliJ)
   ir em Properties (Arquivo de propriedades do spring) e inserir o login e senha do PGAdmin e o nome do banco criado.
-  Ao execultar o projeto o Banco de Dados já será criado com as tabelas.
+  Ao execultar o projeto a tabela user será criada com todos os atributos necessários.
   
   Abrir em seu navegador a URL = http://localhost:8080/ que já será carregado a pagina inicial com a lista de usuarios cadastrados no Banco.
   Ao clicar em Register User será redirecionado para uma pagina de cadastro, onde deve ser por os dados e um Email no formato válido.
