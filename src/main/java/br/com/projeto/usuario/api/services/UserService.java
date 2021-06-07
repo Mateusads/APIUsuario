@@ -18,7 +18,6 @@ public class UserService {
     public User createUser(User user) {
         emailUsed(user);
         return userRepository.save(user);
-
     }
 
     public List<User> findAll() {
