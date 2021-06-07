@@ -34,6 +34,24 @@ public class UserController {
         return new ModelAndView("register/save");
     }
 
+    @GetMapping("/edit/user/{email}")
+    public ModelAndView userEdit(@PathVariable("email") String emailRequest, Model model) {
+        model.addAttribute("userEdit", findUserByEmail(emailRequest));
+        return new ModelAndView("edit/user");
+    }
+
+    @PostMapping("/edit/user/update")
+    public ModelAndView userEditUpdate(@ModelAttribute("userEdit") UserRequestDTO userRequestDTO, Model model) {
+        model.addAttribute("userSave", updateUser(userRequestDTO));
+        return new ModelAndView("register/save");
+    }
+
+    @GetMapping("/delete/user/{email}")
+    public ModelAndView userDelete(@PathVariable("email") String emailRequest) {
+        deleteUserByEmail(emailRequest);
+        return new ModelAndView("register/save");
+    }
+
     @PostMapping("/user")
     public UserResponseDTO createUser(@RequestBody UserRequestDTO userRequestDTO) {
         var entity = UserMapper.toEntity(userRequestDTO);

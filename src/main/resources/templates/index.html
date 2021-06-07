@@ -20,6 +20,7 @@
             <th>Nome</th>
             <th>Age</th>
             <th>Email</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
@@ -27,6 +28,9 @@
             <td th:text="${user.name}"></td>
             <td th:text="${user.age}"></td>
             <td th:text="${user.email}"></td>
+            <td>
+                <a th:href="@{/edit/user/{email}(email=${user.email})}" class="btn btn-primary">Edit</a>
+                <a th:href="@{/delete/user/{email}(email=${user.email})}" class="btn btn-danger">Delete</a>
             </td>
         </tr>
         </tbody>
