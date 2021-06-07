@@ -1,6 +1,6 @@
 <center><h1>API WEB USER - CADASTRO DE USUARIO</h1></center>
 
-<h2>API em Java para cadastro, seleção, edição e deleção de usúario (CRUD)</h2>
+<h2>API em Java para Cadastrar, Selecionar, Editar e Deletar usúario (CRUD)</h2>
   
  Essa API foi desenvolvida com a linguagem Java com Spring.
   
